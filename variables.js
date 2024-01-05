@@ -3,6 +3,8 @@
 
 // Variables -> Containers, Varries
 
+var global_name = 'Shabab'; // Global Scope -> global variable
+
 // Data types of variables
 
 // 1. String: "", ''
@@ -28,3 +30,37 @@ console.log("Addition: ", addition);
 
 let multiplication = first_num * second_num;
 console.log("Multiplication: ", multiplication);
+
+// 3. Boolean
+let isShababReadForProgramming = false;
+console.log(isShababReadForProgramming);
+
+if(isShababReadForProgramming) {
+    console.log("Shabab will be a great programmer.");
+} else {
+    console.log("He has to try harder");
+}
+
+// 4. Array
+let programmers = ['Shetu', 'Shabab'];
+console.log(programmers);
+
+console.log('First value of the array: ', programmers[0]);
+console.log('Second value of the array: ', programmers[1]);
+
+
+
+// loop: for loop
+printArray(programmers) // Function invocation
+
+// function defination/defining
+function printArray(programmers) {
+    // Local scope
+    let name = 'Shetu'; // local variable
+    for(let i=0; i<programmers.length; i++){
+        console.log("Value",i,":", programmers[i]);
+    }
+
+    console.log(name)
+    console.log(global_name)
+}
