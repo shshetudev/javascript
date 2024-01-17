@@ -1,0 +1,23 @@
+input:
+- Enter your numbers:
+- 20 10
+- Enter your operation: ADD, SUB, MUL, DIV, MOD
+
+output:
+if(ADD) -> Addition: 30
+if(SUB) -> Subtraction: 10 
+..........
+
+5/2 = 2.5
+
+2 | 5 | 2 -> division result
+    4
+   ----
+    1 -> Reminder
+
+20 % 10 =
+
+ 10 | 20 | 2
+      
+    ------
+      0
