@@ -36,10 +36,11 @@ console.log(car.special);
 const newCar = {
     manyCars: {
         a: "Saab",
-        b: "Jeep",
-        7: "Mazda"
-    }
+        b: "Jeep"
+        }, 7: "Mazda"
 }
 
 console.log(newCar)
 console.log(newCar.manyCars)
+console.log(newCar[7])
+
