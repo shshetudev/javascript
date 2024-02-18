@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>Javascript function demonstration</h1>
+    <p id="first_para">Paragrahp 1</p>
+  </body>
+
+  <script>
+    function multiply(num1, num2) {
+      let result = num1 * num2; // number * number = number
+      return result;
+    }
+
+    function getMonthName(month) {
+      const months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ]; // Array[String]
+      // IndexOutOfBoundError/Exception
+
+      if (months[month]) {
+        return months[month];
+      } else {
+        throw new Error("Invalid Month number");
+      }
+    }
+
+    let multipliedResult = multiply(3, 100);
+    document.getElementById("first_para").innerHTML = getMonthName(-1);
+  </script>
+</html>
