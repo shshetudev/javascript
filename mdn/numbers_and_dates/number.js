@@ -60,4 +60,30 @@ console.log("Cos-Theta: " + Math.cos(2.56)) //cos(Theta)
 
 
 
+// byte: 1 byte = 8 bit -> -2^7 to (2^7-1) -> -128 to 127
+// int: 4 bytes = 32 bit -> -2^31 to (2^31-1) -> -2,147,483,648 to 2,147,483,647
+// long: 8 bytes = 64 bit -> -2^63 to (2^63-1) -> -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+// 1 Kilobyte(KB) = 1024 byte (10^3 byte)
+// 1 MegaByte(MB) = 1024 KB (10^6 byte)
+// 1 Gigabyte(GB) = 1024 MB (10^9 byte)
+// 1 Terabyte(TB) = 1024 GB (10^12 byte)
+// 1 Petabyte(PB) = 1024 TB (10^15 byte)
+
+// ?
+// 64 bit => architecture => 2^63
+// 32 bit => architecture => 2^31
+
+// BigInts: 32 byte = 254 bit -> (-2^253 t0 2^253+1) -> -9,007,199,254,740,991 to 9,007,199,254,740,991
+const bigInt1 = BigInt(123)
+console.log(bigInt1)
+
+const bigInt2 = BigInt("-12345566")
+console.log(bigInt2)
+
+const bigVar1 = 123
+console.log(bigVar1)
+
+const bigIntDiv = 5n/2n // 2.5 -> parseInt(2.5) -> 2 -> 5n/2n -> 2n
+console.log(bigIntDiv)
 
