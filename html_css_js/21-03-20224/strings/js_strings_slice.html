@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+
+
+<p id="demo"></p>
+
+<script>
+var fruits = "Mango, Watermelon, Banana"; //0,27 -> -1, -28
+// let favoriteFruit = fruits.slice(0,5); // 0->4, start index, end index
+// let favoriteFruit = fruits.slice(19); // Banana
+// let favoriteFruit = fruits.slice(-27); // Banana: 19,27
+let favoriteFruit = fruits.slice(-6,-2); // -6 -> -3
+document.getElementById("demo").innerHTML = favoriteFruit;
+</script>
+
+</body>
+</html>
