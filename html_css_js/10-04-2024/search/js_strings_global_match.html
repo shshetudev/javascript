@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in torronto stays for shorter period of time.";
+let myArr = text.match(/in/g) // 0: in, 1: in
+document.getElementById("demo").innerHTML = myArr.length +' '+ myArr; // myArr.length = 2
+</script>
+
+</body>
+</html>
