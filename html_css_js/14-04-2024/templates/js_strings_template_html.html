@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+
+
+<p id="demo"></p>
+
+<script>
+let header = "Template Strings"
+let tags = ["template strings", "javascript", "es6"] // length=3
+let html = `<h2>${header}</h2>`
+
+// for loop: #1. 0 < 3 -> True , #2. 1 < 3 -> True, #3. 2 < 3 -> True, #4. 3 < 3 -> False
+for(let i=0; i< tags.length; i++) { // 1st: initialization(i=0), 2nd: test-condition(i< tags.length), 3rd: increment(i++)/decrement(i--)
+    html += `<li>${tags[i]}</li>` // html+= "xyz" -> html = html + "xyz"
+    
+    // i=2 -> i++, i=3 -> 3 < 3 (False)
+    // i=1 -> i++, i=2 -> 2 < 3 (True)
+    // i=0 -> i++, i=1 -> 1 < 3(True)
+
+
+    // i++ -> i = i+1, i-- -> i = i-1
+
+    // i=0, #1. `<h2>${header}</h2> <li>${tags[0]}</li>`
+    // i=1, #2. `<h2>${header}</h2> <li>${tags[0]}</li> <li>${tags[1]}</li>`
+    // i=2, #3. `<h2>${header}</h2> <li>${tags[0]}</li> <li>${tags[1]}</li> <li>${tags[2]}</li>`
+}
+
+// for(const x of tags) {
+//     html += `<li>${x}</li>`
+// }
+
+html += `</ul>`
+
+document.getElementById("demo").innerHTML = html;
+</script>
+
+</body>
+</html>
