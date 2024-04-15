@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+
+
+<p id="demo"></p>
+
+<script>
+let first_num="10";
+let second_num="20";
+let addition=first_num+second_num; // + -> string concatanation
+
+let third_num=10; // 10 -> "10"
+let fourth_num="20";
+let addition_2=third_num+fourth_num; //number + string -> string = 1020
+
+let fifth_num="10";
+let sixth_num=20; // 20 -> "20"
+let addition_3=fifth_num+sixth_num; // string + number -> string = 1020
+
+let seventh_num=10; // number
+let eighth_num=20; // number
+let ninth_num="30"; // string
+let addition_4=seventh_num+eighth_num+ninth_num; // number+ number = number + string => string -> 3030
+
+document.getElementById("demo").innerHTML = addition + "<br>" + addition_2 + "<br>" + addition_3 + "<br>" + addition_4;
+</script>
+
+</body>
+</html>
