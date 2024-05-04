@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+
+
+<p id="demo"></p>
+
+<script>
+const cars = [
+    "BMW", //0
+    "Rolce royece", //1
+    "Lambergini", //2
+    "Toyota" //3
+]
+
+/// Creating array using new
+const newCars = new Array("BMW", "Toyota")
+
+function getCarname(array, index) {
+    return array[index]
+}
+
+// Replacing entry
+cars[3] = "Tesla"
+
+// Converting an array to string
+let carsStr = cars.toString()
+
+// Array can hold different types of values(heterogenous)
+let arrayWithDifferentDataTypes = ["Shabab", 11]
+
+// Javascript object
+const shabab = { // serialization: object -> string, deserialization: string -> object
+    name: "Shabab",
+    age: "11",
+    dreamCars: ["Lambergini", "Oddi", "Tesla"]
+}
+
+// Array of objects
+const flowers = [
+    {name: "Rose", color: "Red"},
+    {name: "Marrigold", color: "Yellow"},
+    {name: "Dandylion", color: "Yellow"},
+    {name: "Daisy", color: "White"},
+]
+let lengthOfFlowers = flowers.length
+let lastIndexedFlower = flowers[flowers.length-1].name
+
+// Looping through an array: for loop(traverse) -> explicit
+let viewableHTMLText = ""
+const fruits = ["Banana", "Orange", "Apple", "Mango"]
+for (let i=0; i<fruits.length; i++) {
+    viewableHTMLText += fruits[i] + ","
+}
+// implicit
+let text = ""
+fruits.forEach(fruit => text+=fruit+" ")
+
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
